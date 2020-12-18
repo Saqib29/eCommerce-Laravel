@@ -25,6 +25,8 @@ Route::get('/logout', function () {
     return view('login');
 });
 
+Route::view('/registration', 'registration');
+Route::post('/registration', [UserController::class, 'Registration']);
 Route::post("/login", [UserController::class, 'login']);
 Route::get("/", [ProductController::class, 'index']);
 Route::get("/detail/{id}", [ProductController::class, 'detail']);
