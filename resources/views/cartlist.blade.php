@@ -2,8 +2,8 @@
 @section("content")
 <div class="custom-product">
     <div class="col-sm-4">
-        {{-- <a href="#">Filter</a> --}}
         <h4>Products to Cart</h4>
+        <a class="btn btn-success" href="/ordernow">Order now</a>
     </div>
     <div class="col-sm-10">
         <div class="trending-wrapper">
@@ -27,7 +27,10 @@
                     </div>
                 </div>
             @endforeach
+
         </div>
+        <a class="btn btn-success" href="/ordernow">Order now</a>
+
     </div>
 </div>
 @endsection
